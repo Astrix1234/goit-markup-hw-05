@@ -28,7 +28,11 @@
         >
         <nav class="nav">
           <menu class="nav-list">
-            <li><a class="nav-item" href="index.html" lang="pl">Agencja</a></li>
+            <li>
+              <a class="nav-item underline" href="index.html" lang="pl"
+                >Agencja</a
+              >
+            </li>
             <li>
               <a class="nav-item" href="portfolio.html" lang="pl">Portfolio</a>
             </li>
@@ -62,7 +66,7 @@
         <h1 class="main-title" lang="pl">
           EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU
         </h1>
-        <button class="mainpage-button" type="button" lang="pl">
+        <button class="mainpage-button" type="button" lang="pl" data-modal-open>
           Zamów usługe
         </button>
       </section>
@@ -122,7 +126,7 @@
           </ul>
           <h2 class="occupation-title" lang="pl">Czym się zajmujemy</h2>
           <ul class="occupation-list">
-            <li>
+            <li class="occupation-picture-container">
               <img
                 class="picture"
                 src="images/picture1.jpg"
@@ -130,8 +134,9 @@
                 width="370"
                 height="294"
               />
+              <h3 class="occupation-picture-title">Aplikacje komputerowe</h3>
             </li>
-            <li>
+            <li class="occupation-picture-container">
               <img
                 class="picture"
                 src="images/picture2.jpg"
@@ -139,8 +144,9 @@
                 width="370"
                 height="294"
               />
+              <h3 class="occupation-picture-title">Aplikacje mobilne</h3>
             </li>
-            <li>
+            <li class="occupation-picture-container">
               <img
                 class="picture"
                 src="images/picture3.jpg"
@@ -148,6 +154,7 @@
                 width="370"
                 height="294"
               />
+              <h3 class="occupation-picture-title">Rozwiązania graficzne</h3>
             </li>
           </ul>
         </div>
@@ -394,5 +401,11 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="buton-modal" data-modal-close><b>X</b></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
